@@ -19,7 +19,12 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: myproject
   pool: 5
-  timeout: 5000
+  username: okawa
+  password: taptaptap
+  socket: /var/lib/mysql/mysql.sock
+  host: myproject.cxzxeuwgg0q2.ap-northeast-1.rds.amazonaws.com
