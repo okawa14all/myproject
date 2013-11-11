@@ -3,7 +3,7 @@ set :repo_url, 'https://github.com/okawa14all/myproject.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-set :deploy_to, '/home/ec2-user/apps/#{fetch(:application)}'
+set :deploy_to, "/home/deploy/apps/#{fetch(:application)}"
 set :scm, :git
 
 # set :format, :pretty
